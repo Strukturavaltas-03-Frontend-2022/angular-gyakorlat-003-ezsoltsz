@@ -16,7 +16,9 @@ export class AppComponent {
   constructor(
     private userService: UserService,
   ) {}
-
+  onDeleteUser(user: User): void {
+  this.userService.removeUser(user);
+}
   /**
    * FELADAT!
    * Az app-user-list delUser eseményére lefutó metódus.

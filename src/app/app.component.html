@@ -28,6 +28,10 @@
 </nav>
 
 <div class="container">
+  <app-user-list
+    (delUser)="onDeleteUser($event)"
+    [users]="userList"
+  ></app-user-list>
   <!--
     FELADAT!
     1. Szúrd be ide az app-user-list komponenst.
